@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Assignments</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <div class="container mt-2 p-3 w-50" style="background-color: rgb(206, 206, 206); height:300px">
+        <h1 class="text-center pt-3">Assignment-1</h1>
+        <div class="container w-50">
+            <input type="text" id="taskName" class="form-control mb-2 mt-4" />
+            <button class="btn btn-primary mt-3 m-2" onclick="addNewTask()">Add Task</button>
+            <button onclick="clearAllTasks()" class="btn btn-outline-primary mt-3 m-2">Clear All</button>
+            <ul id="tasksShow"></ul>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- 2 -->
+    <div class="container mt-2 p-3 text-center w-50" style="background-color: rgb(198, 192, 192);">
+        <h1>Assignment-2</h1>
+
+        <div class="container w-50 mt-4">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">1</th>
+                        <th scope="col">2</th>
+                        <th scope="col">3</th>
+                        <th scope="col">4</th>
+                        <th scope="col">5</th>
+                        <th scope="col">6</th>
+                        <th scope="col">7</th>
+                        <th scope="col">8</th>
+                        <th scope="col">9</th>
+                        <th scope="col">10</th>
+                    </tr>
+                </thead>
+                <tbody id="createRow"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- 3 -->
+    <div class="container mt-5 w-50" style="background-color: rgb(242, 212, 212);height:350px">
+        <h1 class="text-center pt-3">Assignment-3</h1>
+        <div class="container w-50">
+            <input type="number" id="addmarks" class="form-control mt-5" placeholder="Enter Marks">
+            <button onclick="addmarks()" class="btn btn-primary mt-4 m-1">Add marks</button>
+            <button onclick="calculate()" class="btn btn-primary mt-4 m-1">Calculate</button>
+            <button onclick="resetMarks()" class="btn btn-outline-primary mt-4 m-1 px-4">Reset</button>
+            <div id="show" class="mt-3"></div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- 4 -->
+    <div class="container mt-5 w-50" style="background-color: rgb(230, 218, 200); height:270px">
+        <h1 class="text-center pt-3">Assignment-4</h1>
+        <div class="container w-50">
+            <input type="text" id="searchvalue" class="form-control mt-5">
+            <button class="btn btn-primary mt-4 px-4" onclick="searchBtn()">Search</button>
+            <button onclick="reset()" class="btn btn-outline-primary mt-4 m-1 px-4">Reset</button>
+            <div id="search" class="mt-3"></div>
+        </div>
+    </div>
+
+
+    <hr>
+
+    <!-- 5 -->
+    <div class="container mt-5 w-50" style="background-color: rgb(174, 188, 198); height:350px">
+        <h1 class="text-center pt-3">Assignment-5</h1>
+        <div class="container w-50">
+            <input type="text" id="filternum" class="form-control mt-5" placeholder="Enter number">
+
+            <button class="btn btn-primary mt-4 m-2" onclick="addNum()">Add Number</button>
+            <button class="btn btn-primary mt-4 m-2" onclick="showEven()">Show Even</button> <br>
+            <button class="btn btn-primary mt-4 m-3" onclick="showOdd()">Show Odd</button>
+            <button class="btn btn-outline-primary mt-4 px-4 m-3" onclick="clearAll()">Clear</button>
+
+            <div id="output" class="mt-3"></div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- 6 -->
+    <div class="container w-50 mt-5" style="background-color: rgb(165, 220, 202);height:300px">
+        <h1 class="text-center pt-3">Assignment-6</h1>
+        <div class="container w-50">
+            <input type="text" id="sorting" class="form-control mt-5" placeholder="Enter Name">
+            <button class="btn btn-primary mt-4 m-2" onClick="addName()">Add Name</button>
+            <button class="btn btn-primary mt-4 px-4 m-2" onClick="sortNames()">Sort</button>
+            <button class="btn btn-outline-primary mt-4 px-4 m-2" onClick="resetNames()">Reset</button>
+            <div id="sortNames"></div>
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
