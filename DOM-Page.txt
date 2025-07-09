@@ -1,0 +1,78 @@
+
+document.body.style.margin = "0";
+document.body.style.fontFamily = "Arial, sans-serif";
+document.body.style.backgroundColor = "#ccc";
+
+
+container = document.createElement("div");
+container.style.maxWidth = "90%";
+container.style.width = "800px";
+container.style.margin = "0 auto";
+container.style.padding = "20px";
+container.style.textAlign = "center";
+document.body.appendChild(container);
+
+
+heading = document.createElement("h1");
+heading.textContent = "Sunita Williams";
+heading.style.color = "black";
+heading.style.marginTop = "15px";
+heading.style.fontSize = "20px"; 
+container.appendChild(heading);
+
+
+image = document.createElement("image");
+image.src = "https://tse3.mm.bing.net/th/id/OIP.hM8vcACmc6IyupfDfR-V1QHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"; 
+image.alt = "Sunita Williams";
+image.style.width = "100%";
+image.style.height = "auto";
+image.style.objectFit = "cover";
+image.style.borderRadius = "10px";
+image.style.marginTop = "15px";
+container.appendChild(image);
+
+
+button = document.createElement("button");
+button.textContent = "Know More";
+button.style.backgroundColor = "#007bff";
+button.style.color = "white";
+button.style.border = "none";
+button.style.padding = "12px 24px";
+button.style.borderRadius = "5px";
+button.style.fontSize = "1rem";
+button.style.cursor = "pointer";
+button.style.transition = "background-color 0.3s ease";
+button.style.margin = "20px 0";
+button.onmouseover = () => button.style.backgroundColor = "#0056b3";
+button.onmouseout = () => button.style.backgroundColor = "#007bff";
+button.onclick = () => alert("Sunita Williams is a record-setting astronaut!");
+container.appendChild(button);
+
+
+card = document.createElement("div");
+card.style.backgroundColor = "white";
+card.style.padding = "20px";
+card.style.borderRadius = "15px";
+card.style.boxShadow = "0 4px 12px rgba(0, 0, 0, 0.2)";
+card.style.marginTop = "30px";
+card.style.textAlign = "left";
+
+
+cardHeading = document.createElement("h2");
+cardHeading.textContent = "Early Life and Education";
+cardHeading.style.marginTop = "0";
+cardHeading.style.fontSize = "15px";
+cardHeading.style.color = "#222";
+cardHeading.style.marginBottom = "12px";
+card.appendChild(cardHeading);
+
+
+cardText = document.createElement("p");
+cardText.textContent = "Sunita Lyn Williams was born on September 19, 1965, in Euclid, Ohio, to Indian-American parents. She graduated from Needham High School in Massachusetts. In 1987, she earned a Bachelor of Science degree in Physical Science from the U.S. Naval Academy and later received a Master of Science in Engineering Management from the Florida Institute of Technology.";
+cardText.style.fontSize = "15px";
+cardText.style.color = "#555";
+cardText.style.lineHeight = "1.6";
+card.appendChild(cardText);
+
+
+container.appendChild(card);
